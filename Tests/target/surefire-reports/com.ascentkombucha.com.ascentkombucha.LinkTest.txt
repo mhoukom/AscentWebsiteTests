@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: com.ascentkombucha.UrlTest
+Test set: com.ascentkombucha.com.ascentkombucha.LinkTest
 -------------------------------------------------------------------------------
-Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
