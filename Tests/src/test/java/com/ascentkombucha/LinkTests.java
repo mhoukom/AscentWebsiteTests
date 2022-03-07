@@ -1,4 +1,4 @@
-package com.ascentkombucha.com.ascentkombucha;
+package com.ascentkombucha;
 
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;

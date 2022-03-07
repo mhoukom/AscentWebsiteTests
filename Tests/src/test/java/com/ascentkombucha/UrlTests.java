@@ -25,25 +25,25 @@ public class UrlTests {
     }
 
     @Test
-    public void canGoToHomePage() {
+    public void goToHomePage() {
         driver.get(urlRoot);
         Assertions.assertEquals(driver.getTitle(), ascentKombuchaTitle);
     }
 
     @Test
-    public void canGoToAboutPage() {
+    public void goToAboutPage() {
         driver.get(urlRoot + "about");
         Assertions.assertEquals(driver.getTitle(), ascentKombuchaTitle);
     }
 
     @Test
-    public void canGoToShopPage() {
+    public void goToShopPage() {
         driver.get(urlRoot + "shop");
         Assertions.assertEquals(driver.getTitle(), ascentKombuchaTitle);
     }
 
     @Test
-    public void canGoToCartPage() {
+    public void goToCartPage() {
         driver.get(urlRoot + "cart");
         Assertions.assertEquals(driver.getTitle(), ascentKombuchaTitle);
     }
