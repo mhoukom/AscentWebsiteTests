@@ -9,7 +9,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class LinkTests {
 
-    String urlRoot = "https://ascent-website-mpnbh.ondigitalocean.app/";
+//
+String urlRoot = "http://localhost:3000/";
     String urlAbout = urlRoot + "about";
     String urlShop = urlRoot + "shop";
     String urlCart = urlRoot + "cart";

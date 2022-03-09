@@ -8,7 +8,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class UrlTests {
 
     String ascentKombuchaTitle = "Ascent Kombucha";
-    String urlRoot = "https://ascent-website-mpnbh.ondigitalocean.app/";
+//    String urlRoot = "https://ascent-website-mpnbh.ondigitalocean.app/";
+String urlRoot = "http://localhost:3000/";
 
     WebDriver driver;
     static ChromeOptions options;

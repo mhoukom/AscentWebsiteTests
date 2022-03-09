@@ -10,8 +10,10 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class CookieTests {
 
-    String urlRoot = "https://ascent-website-mpnbh.ondigitalocean.app/";
+//    String urlRoot = "https://ascent-website-mpnbh.ondigitalocean.app/";
+    String urlRoot = "http://localhost:3000/";
 
+    WebDriver driver;
     static ChromeOptions options;
 
     @BeforeAll
@@ -20,23 +22,29 @@ public class CookieTests {
         options.addArguments("headless");
     }
 
+    @BeforeEach
+    public void newDriver() {
+        driver = new ChromeDriver(options);
+    }
+
     @Test
     public void handleCartCookie() {
-        WebDriver driver = new ChromeDriver(options);
         addToCart(driver);
         Cookie cartCookie = driver.manage().getCookieNamed("cartId");
         Assertions.assertNotNull(cartCookie);
-        driver.close();
     }
 
     @Test
     public void cookiePersists() {
-        WebDriver driver = new ChromeDriver(options);
         addToCart(driver);
         driver.get("https://www.google.com");
         driver.get(urlRoot);
         Cookie cartCookie = driver.manage().getCookieNamed("cartId");
         Assertions.assertNotNull(cartCookie);
+    }
+
+    @AfterEach
+    public void closeDriver() {
         driver.close();
     }
 
